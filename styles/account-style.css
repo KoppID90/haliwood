@@ -1,0 +1,164 @@
+
+
+/* LOGIN / REGISTRATION TITLE */
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+
+
+.account h2 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+.account hr{ 
+    margin-block: 1rem;
+    width: 200px;  
+    color: var(--border);
+    
+} 
+
+/* LOGIN / REGISTRATION INPUTS */
+
+
+
+.account-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    background-color: var(--Menta);
+    width: 100%;
+    padding-block: 4rem;
+    gap: 10rem;
+}
+
+.login-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+}
+
+.account-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 380px;
+    
+}
+
+
+
+.account-items input{
+    
+    font-size: 1.5rem;
+    outline: none;
+    padding: 0.3rem;
+    border: none;
+    font-family: inherit;
+    background-color: var(--Menta);
+    border-bottom: 1px solid var(--sidenav-transparent);
+}
+
+.account-items input:focus {
+    border-bottom: 1px solid var(--simple);
+    
+}
+
+#aszf1 {
+    width: 20px;
+}
+
+#data-management1 {
+    width: 20px;
+}
+
+.account-items button{
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    background-color: var(--action);
+    font-family: inherit;
+    border: 1px solid var(--action);
+    font-weight: bold;
+    
+}
+
+
+.account-items button:hover {
+    background-color: var(--darker-transparent);
+    border: 1px solid var(--action);
+    color: var(--action);
+    
+}
+
+.aszf-box1 {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.aszf-box1 a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.aszf-box1 a:hover {
+    text-decoration: underline;
+}
+
+input[type="checkbox"] {
+    content: "";
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    display: grid;
+    place-content: center;
+    
+    
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 3px;
+    transform: scale(0);
+}
+
+input[type="checkbox"]:checked::before{   
+
+    transform: scale(1);
+}
+
+@media (max-width: 1250px) {
+
+    .account-flex{
+        gap: 4rem;
+    }
+
+}
+
+
+ @media (max-width: 790px) {
+    .account {
+        margin-inline: 2rem;
+        align-items: center;
+    }
+    .account-items h2 {
+        text-align: center;
+    }
+ }

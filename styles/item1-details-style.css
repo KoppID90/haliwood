@@ -1,0 +1,273 @@
+
+
+/* ITEM DETAILS */
+
+.item-section {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.item-details-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* ITEM DESCRIBE */
+
+.item-describe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--newest-sugar);
+    padding: 2rem;
+    width: max(40%, 560px); 
+    min-width: 280px;
+    height: auto;
+    
+}
+
+.item-describe li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.item-describe li span {
+    font-weight: bold;
+    
+}
+
+.item-describe h3 {
+    font-size: 2rem;
+}
+
+.item-describe h3 span {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+}
+
+.button-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.button-link{
+    color: var(--border);
+    background-color: var(--action);
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: 0.5px solid var(--action);
+    max-width: 500px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    color: var(--action);
+    background-color: var(--darker-transparent);
+    border: 0.5px solid var(--action);
+}
+
+.item-img {
+    
+    width: max(40%, 560px); 
+    min-width: 280px;
+    height: auto;
+    
+}
+
+
+.details-describe {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+
+}
+
+.ground {
+    background-color: var(--newest-sugar);
+    padding-block: 2rem;
+    margin-top: 5rem;
+}
+
+.second-item {
+    gap: 1rem;
+}
+
+iframe {
+
+    width: max(40%, 560px); 
+    min-width: 280px;
+    height: 315px;
+    padding: 1rem;
+    
+}  
+
+/*  POPULAR PRODUCTS TITLE */
+
+.popular-products {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-left: 5rem;
+}
+
+
+
+.popular-products h2 {
+
+    font-size: 2rem;
+}
+
+.popular-products hr { 
+    margin-block: 1rem;
+    width: 200px;  
+    color: var(--border);
+    
+} 
+
+/* popular products title animation with translateX */
+
+.scroll-animation {
+    transform: translateX(-200px);
+    transition: all 0.5s ease;
+}
+.show {
+    transform: translateX(0);
+}
+
+/* popular-products style */
+
+.popular-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 1rem;
+    margin: 4rem 5rem; 
+    
+}
+
+
+.popular-items {
+background-color: var(--black-transparent);
+width: 100%;
+height: 100%;
+max-width: 350px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: var(--hdr-sub);
+gap: 0.5rem;
+text-align: center;
+font-weight: bold;
+
+}
+
+.img-action {
+    display: flex;
+    position: relative;
+    color: var(--simple);
+   
+}
+
+.item-details {
+ 
+    text-decoration: none;
+}
+
+.item-details:hover {
+    filter: brightness(0.9);
+}
+
+.item-details h3 { 
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    color: var(--hdr-sub);
+}
+
+.price-popular {
+    height: 50%;
+}
+
+.price-popular span:nth-child(1) {
+   text-decoration: line-through;
+   margin-right: 1rem;
+}
+
+.price-popular span:nth-child(2) {
+    font-size: 1.5rem;
+} 
+
+.shopping-link {
+    text-decoration: none;
+}
+
+
+
+.shopping-btn {
+    background-color: var(--action);
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--border);
+    font-weight: bold;
+    border: 0.5px solid var(--action);
+}
+
+.shopping-btn:hover {
+    background-color: var(--black-transparent);
+    color: var(--action);
+    border: 0.5px solid var(--action);
+    
+}
+.img-action img {
+    width: 100%;
+    height: 100%;
+}
+
+.little-box {
+    background-color: var(--action);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    display: grid;
+    place-content: center;
+    font-weight: bold;
+}
+
+    @media (max-width: 790px) {
+       .details-describe {
+            width: 90%;
+        }
+        .popular-products {
+            margin-inline: 2rem;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .popular-products-grid {
+            margin: 2rem;
+        }
+
+
+    }

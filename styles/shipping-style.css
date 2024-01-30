@@ -1,0 +1,94 @@
+
+/* shipping and pay main title */
+
+.shipping-pay {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-inline: 5rem;
+    margin-top: 10rem;
+
+}
+
+
+.shipping-pay h2 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+.shipping-pay hr { 
+    margin-block: 1rem;
+    width: 200px;  
+    color: var(--border);
+    
+} 
+
+/* animation with translateX, just to the pay title */
+
+.scroll-animation {
+    transform: translateX(-200px);
+    transition: all 0.5s ease;
+}
+.show {
+    transform: translateX(0);
+}
+
+/* info styles */
+
+.info {
+    
+    margin-inline: 5rem;
+    margin-block: 4rem;
+}
+
+.info h3, span{
+    font-weight: bold;
+
+}
+
+.info p, .info li {
+    margin-top: 1rem;
+}
+
+.info li {
+    margin-left: 1rem;
+}
+
+.pay {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.pay ul {
+    margin-bottom: 4rem;
+}
+
+.pic1 {
+    background: url(../assets/img/credit-card.jpg) center/cover;
+}
+.pic2 {
+    background: url(../assets/img/delivery.jpg) center/cover;
+}
+
+.picture {
+    height: 280px;
+    width: 380px;
+    min-height: 230px;
+    min-width: 230px;
+    transform: translateY(-4rem);
+}
+
+
+
+@media (max-width: 790px) {
+    .shipping-pay {
+        margin-inline: 2rem;
+        align-items: center;
+    }
+    .info {
+        margin-inline: 2rem;
+    }
+}

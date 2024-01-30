@@ -1,0 +1,135 @@
+
+
+/* populat products title */
+
+.popular-products {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+
+.popular-products h2 {
+    margin-left: 5rem;
+    font-size: 2rem;
+}
+
+.popular-products hr { 
+    margin-block: 1rem;
+    width: 200px;  
+    color: var(--border);
+    margin-left: 5rem;
+} 
+
+/* popular products style */
+
+.popular-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 1rem;
+    margin: 4rem 5rem;
+    
+   
+    
+}
+
+.popular-items {
+background-color: var(--black-transparent);
+width: 100%;
+height: 100%;
+max-width: 350px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: var(--hdr-sub);
+gap: 0.5rem;
+text-align: center;
+font-weight: bold;
+
+}
+
+.item-details {
+ 
+    text-decoration: none;
+}
+
+.item-details:hover {
+    filter: brightness(0.9);
+}
+
+.item-details h3 { 
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    color: var(--hdr-sub);
+}
+
+.price-popular {
+    height: 50%;
+}
+
+.price-popular span:nth-child(1) {
+   text-decoration: line-through;
+   margin-right: 0.5rem;
+}
+
+.price-popular span:nth-child(2) {
+    font-size: 1.5rem;
+} 
+
+.shopping-link {
+    text-decoration: none;
+}
+
+
+
+.shopping-btn {
+    background-color: var(--action);
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--border);
+    font-weight: bold;
+    border: 0.5px solid var(--action);
+}
+
+.shopping-btn:hover {
+    background-color: var(--black-transparent);
+    color: var(--action);
+    border: 0.5px solid var(--action);
+    
+}
+.img-action {
+    display: flex;
+    position: relative;
+    color: var(--simple);
+}
+
+.img-action img {
+    width: 100%;
+    height: 100%;
+}
+
+.little-box {
+    background-color: var(--action);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    display: grid;
+    place-content: center;
+}
+
+
+
+@media (max-width: 790px){
+    .popular-products-grid {
+        margin-inline: 0.5rem;
+        
+    }}
